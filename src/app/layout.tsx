@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Inter } from 'next/font/google'
-
 import { Chivo } from 'next/font/google'
 import { Libre_Franklin } from 'next/font/google'
 
@@ -55,7 +55,10 @@ export default function RootLayout({
           fontHeading.variable,
           fontBody.variable
         )}
-      >{children}</body>
+      >
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
