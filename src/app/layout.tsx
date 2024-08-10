@@ -36,7 +36,7 @@ const fontBody = Inter({
 
 export const metadata: Metadata = {
   title: "Blurhash Generator",
-  description: "Generate a blurhash for an image url",
+  description: "Generate a blurhash from an image url",
 };
 
 export default function RootLayout({

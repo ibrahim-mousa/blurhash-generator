@@ -26,11 +26,7 @@ export function LandingPage() {
                 variant="outline"
                 size="sm"
                 onClick={() => {
-                  navigator.clipboard.writeText(
-                    `
-                      curl -X POST https://blurhash-generator.vercel.app/generate -H 'Content-Type: application/json' -d '{"url": "https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png"}'
-                    `
-                  )
+                  navigator.clipboard.writeText(`curl -X POST https://blurhash-generator.vercel.app/generate -H 'Content-Type: application/json' -d '{"url": "https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png"}'`)
                 }}
               >
                 <CopyIcon className="w-5 h-5" />
